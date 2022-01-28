@@ -12,5 +12,11 @@ public class Vanne extends Composant {
 		in = comp;
 		
 	}
+
+	public String description() {
+		
+		return super.description() + " in1: " + (in == null ? "not connected" : in.getId());
+
+	}
 	
 }

@@ -10,5 +10,11 @@ public abstract class Composant {
 		return super.toString(); // class@numero renvoye par Object
 		
 	}
+
+	public String description() {
+
+		return this.getId();
+
+	}
 	
 }
