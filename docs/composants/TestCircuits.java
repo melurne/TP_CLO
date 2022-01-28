@@ -32,7 +32,7 @@ public class TestCircuits {
 		
 		//Connexions
 		
-		or1.setIn1(i1);
+		//or1.setIn1(i1);
 		or1.setIn2(i2);
 		not1.setIn(securite);
 		and1.setIn1(or1);
