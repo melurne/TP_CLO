@@ -12,5 +12,14 @@ public class Vanne extends Composant {
 		in = comp;
 		
 	}
+
+	public boolean getEtat() throws NonConnectedException {
+		if (in == null) {
+			throw new NonConnectedException();
+		}
+		else {
+			return in.getEtat();
+		}
+	}
 	
 }

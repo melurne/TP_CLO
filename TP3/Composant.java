@@ -11,4 +11,19 @@ public abstract class Composant {
 		
 	}
 	
+	public String description() {
+
+		return this.getId();
+
+	}
+
+	public abstract boolean getEtat() throws NonConnectedException;
+
+	public String traceEtat() {
+			try {
+				return description() + " Etat : " + getEtat();
+			} catch (NonConnectedException e) {
+				return description() + " Etat : Composant non connecté";
+			}
+	}
 }
