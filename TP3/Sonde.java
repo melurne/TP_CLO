@@ -1,5 +1,3 @@
-import java.io.IOException;
-
 public class Sonde extends Composant{
     protected Composant comp;
     protected String port;
