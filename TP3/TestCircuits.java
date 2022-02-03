@@ -36,9 +36,10 @@ public class TestCircuits {
 		Vanne vanne1 = new Vanne();
 		composants[6] = vanne1;
 		
+		LazySonde s1 = new LazySonde(or1, "in1");
 		//Connexions
 		
-		or1.setIn1(new LazySonde(or1, "in1"));
+		or1.setIn1(s1);
 		or1.setIn2(i2);
 		not1.setIn(securite);
 		and1.setIn1(or1);
@@ -46,11 +47,12 @@ public class TestCircuits {
 		vanne1.setIn(and1);
 
 		i1.on();
-		i2.on();
+		i2.off();
 		securite.off();
 		
 		//Affichage
-
+		System.out.println(or1.traceEtat());
+		s1.reset();
 		//printIds(composants);
 		//try {
 		traceEtats(composants);
