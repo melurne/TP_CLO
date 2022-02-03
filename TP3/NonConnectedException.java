@@ -1,4 +1,1 @@
-public class NonConnectedException extends Exception
-{
-    
-}
+public class NonConnectedException extends Exception {}

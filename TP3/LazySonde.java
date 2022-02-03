@@ -1,4 +1,5 @@
 public class LazySonde extends Sonde {
+    
     protected boolean etat;
     protected boolean set = false;
 

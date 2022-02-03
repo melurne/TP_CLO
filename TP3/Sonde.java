@@ -1,8 +1,7 @@
 public class Sonde extends Composant{
+
     protected Composant comp;
     protected String port;
-
-    
 
     public Sonde(Composant comp, String port) {
         this.comp = comp;
@@ -13,5 +12,6 @@ public class Sonde extends Composant{
     
     public boolean getEtat() {
         System.out.print(port + " de " + this.comp.getId() + "true ou false? ");   
-        return System.console().readLine() == "true";}
+        return System.console().readLine() == "true";
+    }
 }
