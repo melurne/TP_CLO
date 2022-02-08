@@ -13,6 +13,7 @@ public class Not extends Porte {
 
 	public String description() {
 		return super.description() + " in1: " + (in == null ? "not connected" : in.getId());
+	
 	}
 	
 	public boolean getEtat() throws NonConnectedException {
