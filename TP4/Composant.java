@@ -27,6 +27,8 @@ public abstract class Composant implements Comparable<Composant> {
 			}
 	}
 
+
+	// NUL PAS BO
 	void probe(SondesTable tableSondes) {
 		if (this instanceof Porte2Entrees) {
 			if (((Porte2Entrees)this).in1 instanceof Interrupteur) {
